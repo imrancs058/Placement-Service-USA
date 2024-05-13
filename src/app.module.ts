@@ -25,16 +25,16 @@ import { PakagesModule } from './modules/pakages/pakages.module';
     }),
     TypeOrmModule.forRoot({
       type: 'mysql',
-       host: 'sql.freedb.tech', // Local
-      // host: 'sql.freedb.tech', // live
+      //  host: 'sql.freedb.tech', // Local
+      host: 'sql.freedb.tech', // live
       port: 3306,
-      username: 'freedb_imran', // Local
-      password: '9rs2VkcQKjgz3&?', // Local
-      database: 'freedb_placement', // Local
+      // username: 'freedb_imran', // Local
+      // password: '9rs2VkcQKjgz3&?', // Local
+      // database: 'freedb_placement', // Local
 
-      // username: 'freedb_imranProd', // Live
-      // password: 'wYhs4Cs3Yt6#R5$', // Live
-      // database: 'freedb_placementProd', // Live
+      username: 'freedb_imranProd', // Live
+      password: 'wYhs4Cs3Yt6#R5$', // Live
+      database: 'freedb_placementProd', // Live
       synchronize: true,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       //  "logging": true
