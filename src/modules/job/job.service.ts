@@ -244,6 +244,7 @@ export class JobService {
           'job.id',
           'job.packagesId',
           'job.userId',
+          'job.telecommuting',
           'job.jobTitle',
           'job.multiPosition',
           'job.discription',
