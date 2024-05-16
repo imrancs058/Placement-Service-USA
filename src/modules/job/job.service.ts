@@ -495,6 +495,7 @@ export class JobService {
       const result = await queryBuilder
         .leftJoinAndSelect('job.employerInfo', 'employerInfo')
         .leftJoinAndSelect('job.payments', 'payments')
+        .leftJoinAndSelect('job.packages', 'packages')
         .leftJoinAndSelect('job.user', 'user')
         .select([
           'job.id',
@@ -535,6 +536,7 @@ export class JobService {
           "job.userId",
           "job.varify",
           "user",
+          'packages',
           'employerInfo',
            'payments'])
         .orderBy(sortBy, sortOrder)
