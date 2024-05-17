@@ -12,12 +12,6 @@ export class PaymentController {
   async createme(@Body() body: any) {
     return this.paymentService.savedPayment(body);
   }
-  // Create Instant Now
-  // @Post('/create-instant')
-  // @ApiBody({ description: 'Create Stripe Instant ', type: PaymentPayloadDto })
-  // async create(@Body() body: any,): Promise<Stripe.PaymentIntent> {
-  //     return this.paymentService.createCheckoutInstant(body);
-  // }
 
   @Post('/create-instant')
   @ApiBody({ description: 'Create Stripe Instant ', type: PaymentPayloadDto })

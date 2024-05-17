@@ -16,6 +16,7 @@ import { PaymentModule } from './modules/payment/payment.module';
 // import { QuickbookModule} from './modules/invoice/quickbook.module'
 import { ServicsModule } from './modules/services/services.module';
 import { PakagesModule } from './modules/pakages/pakages.module';
+import { QuickbookModule } from './modules/quickbook/quickbook.module'
 @Module({
   imports: [
     ConfigrationModule,
@@ -40,7 +41,7 @@ import { PakagesModule } from './modules/pakages/pakages.module';
       //  "logging": true
     }),
     PaymentModule,
-    // QuickbookModule,
+    QuickbookModule,
     PakagesModule,
     ServicsModule,
     LoggerModule,
